@@ -4,8 +4,6 @@ import { Container } from './Container'
 
 const navLinks = [
   { href: '#about', label: 'About' },
-  { href: '#architecture', label: 'Architecture' },
-  { href: '#cicd', label: 'CI/CD' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -17,7 +15,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between">
         <a className="text-lg font-bold tracking-tight text-white" href="#about">
-          Daniel.dev
+          Daniel Ränk
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">

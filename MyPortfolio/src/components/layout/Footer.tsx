@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-slate-800 py-8">
       <Container className="flex flex-col items-center justify-between gap-3 text-sm text-slate-400 md:flex-row">
         <p>� {new Date().getFullYear()} Daniel - .NET Cloud Developer</p>
-        <p>Built with React, TypeScript, Tailwind, and a CI/CD mindset.</p>
+        <p>Built with React, TypeScript, Tailwind</p>
       </Container>
     </footer>
   )
