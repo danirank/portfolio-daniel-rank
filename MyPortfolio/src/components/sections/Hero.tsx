@@ -1,4 +1,5 @@
 import { Button } from '../ui/Button'
+import profileImage from '../../assets/CvKvadCloudBg.jpg'
 
 export function HeroSection() {
   return (
@@ -13,13 +14,24 @@ export function HeroSection() {
             .NET Cloud Developer
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
-            I build reliable APIs and ship them to the cloud with CI/CD.
+            Focus on scaleble solutions and clean code
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#projects">View Projects</Button>
             <Button href="#" variant="secondary">
               Download CV
             </Button>
+          </div>
+        </div>
+
+        <div className="order-first mx-auto w-full max-w-xs lg:order-none lg:ml-auto lg:mr-0 lg:max-w-sm">
+          <div className="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/50 shadow-[0_20px_50px_rgba(2,6,23,0.55)]">
+            <img
+              src={profileImage}
+              alt="Portrait of Daniel, .NET cloud developer"
+              className="h-full w-full object-cover"
+              loading="eager"
+            />
           </div>
         </div>
       </div>
