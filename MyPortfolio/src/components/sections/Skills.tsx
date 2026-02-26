@@ -18,7 +18,10 @@ export function SkillsSection() {
             <h3 className="mt-3 text-lg font-semibold text-white">{group.title}</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
               {group.items.map((item) => (
-                <li key={item}>� {item}</li>
+                <li key={item}>
+                  <span className="mr-2 text-cyan-300">{'\u2713'}</span>
+                  {item}
+                </li>
               ))}
             </ul>
           </Card>
