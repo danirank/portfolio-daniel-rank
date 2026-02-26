@@ -4,11 +4,13 @@ import { Button } from '../ui/Button'
 import { Card } from '../ui/Card'
 
 export function ProjectsSection() {
+  const hasRealUrl = (url?: string) => Boolean(url && url.trim() && url !== '#')
+
   return (
     <section id="projects" className="border-b border-slate-800 py-16">
       <h2 className="text-2xl font-semibold text-white">Projects</h2>
       <p className="mt-2 text-slate-300">
-        Selected backend and cloud-focused projects with CI/CD workflows.
+        Selected backend and cloud-focused projects.
       </p>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-3">
@@ -27,18 +29,35 @@ export function ProjectsSection() {
               <p className="text-sm font-semibold text-slate-100">Highlights</p>
               <ul className="mt-2 space-y-1 text-sm text-slate-300">
                 {project.highlights.map((highlight) => (
-                  <li key={highlight}>� {highlight}</li>
+                  <li key={highlight}>- {highlight}</li>
                 ))}
               </ul>
             </div>
 
+            {project.proofBadges && project.proofBadges.length > 0 && (
+              <div className="mt-4 border-t border-slate-800 pt-4">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Design
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.proofBadges.map((proof) => (
+                    <Badge key={proof}>{proof}</Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="mt-6 flex gap-3">
-              <Button href={project.githubUrl} variant="secondary" className="px-4 py-2 text-xs">
-                GitHub
-              </Button>
-              <Button href={project.liveUrl} className="px-4 py-2 text-xs">
-                Live
-              </Button>
+              {hasRealUrl(project.githubUrl) && (
+                <Button href={project.githubUrl} variant="secondary" className="px-4 py-2 text-xs">
+                  GitHub
+                </Button>
+              )}
+              {hasRealUrl(project.liveUrl) && (
+                <Button href={project.liveUrl} className="px-4 py-2 text-xs">
+                  Live
+                </Button>
+              )}
             </div>
           </Card>
         ))}

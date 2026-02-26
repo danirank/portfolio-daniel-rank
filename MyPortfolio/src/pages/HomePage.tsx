@@ -1,5 +1,3 @@
-import { ArchitectureSection } from '../components/sections/Architecture'
-import { CICDSection } from '../components/sections/CICD'
 import { ContactSection } from '../components/sections/Contact'
 import { HeroSection } from '../components/sections/Hero'
 import { ProjectsSection } from '../components/sections/Projects'
@@ -16,8 +14,6 @@ export function HomePage() {
         <Container>
           <HeroSection />
           <SkillsSection />
-          
-          
           <ProjectsSection />
           <ContactSection />
         </Container>

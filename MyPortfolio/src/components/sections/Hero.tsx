@@ -1,12 +1,4 @@
 import { Button } from '../ui/Button'
-import { Card } from '../ui/Card'
-
-const statusItems = [
-  ['Build', 'passing'],
-  ['Deploy', 'automated'],
-  ['Uptime', 'monitored'],
-  ['Region', 'West Europe'],
-]
 
 export function HeroSection() {
   return (
