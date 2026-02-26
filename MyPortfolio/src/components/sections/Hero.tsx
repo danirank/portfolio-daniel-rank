@@ -1,6 +1,7 @@
 import { Button } from '../ui/Button'
 import profileImage from '../../assets/CvKvadCloudBg.jpg'
 
+//TODO: Implement background - teacher, education. Short and consise description
 export function HeroSection() {
   return (
     <section id="about" className="relative border-b border-slate-800 py-20 sm:py-24">
@@ -19,7 +20,7 @@ export function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#projects">View Projects</Button>
             <Button href="#" variant="secondary">
-              Download CV
+              Show more about me
             </Button>
           </div>
         </div>
