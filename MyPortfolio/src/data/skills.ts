@@ -6,22 +6,35 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: 'Backend',
-    icon: '?',
-    items: ['ASP.NET Core Web API', 'Entity Framework Core', 'RESTful design & auth'],
-  },
-  {
-    title: 'Cloud/DevOps',
-    icon: '?',
-    items: ['Azure App Services & SQL', 'Docker & container workflows', 'GitHub Actions pipelines'],
-  },
-  {
-    title: 'Quality',
-    icon: '?',
+    title: 'Tech stack',
+    icon: '⚙',
     items: [
-      'xUnit integration tests',
-      'Code quality with ESLint/Prettier',
-      'Monitoring, logs, and health checks',
+      'ASP.NET Core Web API',
+      'React + TypeScript',
+      'Entity Framework Core',
+      'SQL Server & MongoDB',
+      'Docker & GitHub Actions',
+    ],
+  },
+  {
+    title: 'Soft skills',
+    icon: '✦',
+    items: [
+      'Team-oriented and easy to collaborate with',
+      'Strong relationship-building and communication skills',
+      'Structured and analytical problem-solving',
+      'High sense of responsibility and follow-through',
+      'Driven by continuous learning and improvement',
+    ],
+  },
+  {
+    title: 'Engineering practices',
+    icon: '⌨',
+    items: [
+      'TDD in service-layer workflows',
+      'Unit testing with xUnit and Moq',
+      'Clean layering: Controller -> Service -> Repository',
+      'CI pipelines with build and test gates',
     ],
   },
 ]
