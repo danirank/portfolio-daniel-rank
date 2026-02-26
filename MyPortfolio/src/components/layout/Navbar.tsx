@@ -5,7 +5,11 @@ import { Container } from './Container'
 const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+]
+
+const socialLinks = [
+  { href: 'https://github.com/danirank', label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/daniel-rank', label: 'LinkedIn' },
 ]
 
 export function Navbar() {
@@ -14,9 +18,25 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between">
-        <a className="text-lg font-bold tracking-tight text-white" href="#about">
-          Daniel Ränk
-        </a>
+        <div className="flex items-center gap-4">
+          <a className="text-lg font-bold tracking-tight text-white" href="#about">
+            {'Daniel R\u00e4nk'}
+          </a>
+
+          <div className="hidden items-center gap-3 sm:flex">
+            {socialLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-slate-300 transition hover:text-cyan-300"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
 
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -28,8 +48,8 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <Button href="#contact" className="px-4 py-2 text-xs">
-            Get in touch
+          <Button href="#projects" className="px-4 py-2 text-xs">
+            View projects
           </Button>
         </nav>
 
@@ -39,7 +59,15 @@ export function Navbar() {
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
-          {isOpen ? '�' : '?'}
+          {isOpen ? (
+            <span className="text-base font-semibold leading-none">X</span>
+          ) : (
+            <span className="flex flex-col gap-1" aria-hidden="true">
+              <span className="block h-0.5 w-4 bg-slate-200" />
+              <span className="block h-0.5 w-4 bg-slate-200" />
+              <span className="block h-0.5 w-4 bg-slate-200" />
+            </span>
+          )}
         </button>
       </Container>
 
@@ -56,8 +84,21 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button href="#contact" className="w-full justify-center">
-              Get in touch
+            <div className="h-px bg-slate-800" />
+            {socialLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-slate-300 transition hover:text-cyan-300"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+            <Button href="#projects" className="w-full justify-center">
+              View projects
             </Button>
           </Container>
         </div>
