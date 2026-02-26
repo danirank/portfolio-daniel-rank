@@ -14,7 +14,7 @@ export function ContactSection() {
     <section id="contact" className="py-16">
       <h2 className="text-2xl font-semibold text-white">Contact</h2>
       <p className="mt-2 text-slate-300">
-        Let�s connect about backend, cloud engineering, and new opportunities.
+        Let's connect about backend, cloud engineering, and new opportunities.
       </p>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-2">

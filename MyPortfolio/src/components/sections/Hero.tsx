@@ -15,7 +15,7 @@ export function HeroSection() {
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
-            Developer Portfolio
+            Portfolio
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
             .NET Cloud Developer
@@ -30,21 +30,6 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-
-        <Card className="max-w-md justify-self-start lg:justify-self-end">
-          <h2 className="mb-4 text-lg font-semibold text-white">Cloud Delivery Status</h2>
-          <ul className="space-y-3">
-            {statusItems.map(([label, value]) => (
-              <li
-                key={label}
-                className="flex items-center justify-between rounded-lg border border-slate-800 bg-slate-950/60 px-3 py-2"
-              >
-                <span className="text-sm text-slate-300">{label}</span>
-                <span className="text-sm font-semibold text-emerald-300">{value}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
       </div>
     </section>
   )

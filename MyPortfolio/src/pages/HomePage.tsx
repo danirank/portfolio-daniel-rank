@@ -16,8 +16,8 @@ export function HomePage() {
         <Container>
           <HeroSection />
           <SkillsSection />
-          <ArchitectureSection />
-          <CICDSection />
+          
+          
           <ProjectsSection />
           <ContactSection />
         </Container>
