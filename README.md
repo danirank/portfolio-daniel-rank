@@ -2,11 +2,6 @@
 
 My developer portfolio, built with React, TypeScript, Vite, and Tailwind CSS.
 
-## Project Location
-
-The application code is in:
-
-- `MyPortfolio/`
 
 ## Stack
 
