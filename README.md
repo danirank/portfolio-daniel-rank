@@ -1,35 +1,20 @@
-# Portfolio DR
+# Daniel Ränk – Developer Portfolio
 
-My developer portfolio, built with React, TypeScript, Vite, and Tailwind CSS.
+Personal developer portfolio built with React, TypeScript, and Tailwind CSS.
+
+This project presents backend-focused work, engineering practices, and architectural thinking in a clean, modern interface. The goal is to highlight structured system design, maintainable code, and practical development workflows.
+
+---
+
+## Tech Stack
+
+- React  
+- TypeScript  
+- Vite  
+- Tailwind CSS  
+- ESLint  
+- Prettier  
+
+---
 
 
-## Stack
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- ESLint + Prettier
-
-## Run Locally
-
-From `MyPortfolio/`:
-
-```bash
-npm install
-npm run dev
-```
-
-## Quality Checks
-
-From `MyPortfolio/`:
-
-```bash
-npm run lint
-npm run build
-```
-
-## Notes
-
-- Main portfolio content is data-driven in `MyPortfolio/src/data/`.
-- UI sections are in `MyPortfolio/src/components/sections/`.
