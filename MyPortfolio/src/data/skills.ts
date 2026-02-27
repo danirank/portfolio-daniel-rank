@@ -15,18 +15,18 @@ export const skillGroups: SkillGroup[] = [
       'SQL Server & MongoDB',
       'Docker',
       'GitHub Actions',
-      'JWT & Microsoft Identity',
+      'JWT Authentication & Microsoft Identity',
     ],
   },
   {
     title: 'Engineering practices',
     icon: '⌨',
     items: [
-      'Layered architecture (Controller → Service → Repository)',
-      'TDD-driven service layer development',
+      'OOP',
+      'TDD',
       'Automated unit testing',
       'CI pipelines with build and test gates',
-      'AI-assisted prototyping and refactoring',
+      'AI-assisted development and structured refactoring',
     ],
   },
   {

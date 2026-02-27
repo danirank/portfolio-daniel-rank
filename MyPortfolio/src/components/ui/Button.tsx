@@ -7,6 +7,8 @@ type ButtonProps = {
   variant?: ButtonVariant
   href?: string
   className?: string
+  target?: string
+  rel?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -23,13 +25,15 @@ export function Button({
   variant = 'primary',
   href,
   className = '',
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`
 
   if (href) {
     return (
-      <a className={classes} href={href}>
+      <a className={classes} href={href} target={target} rel={rel}>
         {children}
       </a>
     )

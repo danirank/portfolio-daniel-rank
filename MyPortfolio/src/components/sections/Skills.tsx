@@ -6,7 +6,7 @@ export function SkillsSection() {
     <section id="skills" className="border-b border-slate-800 py-16">
       <h2 className="text-2xl font-semibold text-white">Skills</h2>
       <p className="mt-2 text-slate-300">
-        Focused on reliable backend systems and practical cloud delivery.
+        Focused on backend architecture, system design, and modern development workflows.
       </p>
 
       <div className="mt-8 grid gap-5 md:grid-cols-3">

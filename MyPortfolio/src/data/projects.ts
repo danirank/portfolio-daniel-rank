@@ -11,76 +11,97 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: 'Auction Platform',
-    summary: 'Fullstack auction platform with tested ASP.NET Core APIs and automated CI builds.',
-    tech: ['ASP.NET Core Web API', 'Microsoft Identity', 'React', 'xUnit', 'Moq', 'GitHub Actions'],
+    summary:
+      'Fullstack auction platform featuring tested ASP.NET Core APIs and automated CI workflows.',
+    tech: [
+      'ASP.NET Core Web API',
+      'Microsoft Identity',
+      'React',
+      'xUnit',
+      'Moq',
+      'GitHub Actions',
+    ],
     highlights: [
-      'Implements a layered flow: Controller → Service → Repository.',
-      'Service layer was developed using a TDD-first workflow.',
-      'Unit tests cover core service behavior with xUnit + Moq.',
-      'GitHub Actions runs automated build and test steps on push.',
+      'Implements layered architecture (Controller → Service → Repository).',
+      'Develops the service layer using a TDD-first workflow.',
+      'Ensures core business logic correctness with xUnit and Moq.',
+      'Automates build and test pipelines via GitHub Actions.',
     ],
     githubUrl: 'https://github.com/danirank/AuctionPlatform',
-    proofBadges: ['TDD', 'Layered Architecture', 'Automated Tests', 'CI Pipeline'],
+    proofBadges: ['TDD', 'Layered Architecture', 'Automated Testing', 'CI Pipeline'],
   },
 
   {
     title: 'Bookstore Admin Tool',
-    summary: 'WPF admin tool for SQL-backed CRUD management of bookstore data.',
-    tech: ['WPF', 'C#', 'MVVM', 'Entity Framework (Database First)', 'SQL Server'],
-    highlights: [
-      'CRUD for books, authors, stores, and inventory.',
-      'MVVM structure separates UI, state, and data access concerns.',
-      'Runs against a SQL Server database restore (BookstoreDB backup).',
+    summary:
+      'WPF administration tool managing bookstore data through a SQL-backed CRUD architecture.',
+    tech: [
+      'WPF',
+      'C#',
+      'MVVM',
+      'Entity Framework (Database First)',
+      'SQL Server',
     ],
-    githubUrl: 'https://github.com/danirank/BookstoreAdminWpfInlmning2',
-    proofBadges: ['MVVM Architecture', 'Relational CRUD', 'Database-First Modeling'],
+    highlights: [
+      'Implements full CRUD operations for books, authors, stores, and inventory.',
+      'Applies MVVM to separate UI logic, state management, and data access.',
+      'Connects to a restored SQL Server database (BookstoreDB).',
+    ],
+    githubUrl:
+      'https://github.com/danirank/BookstoreAdminWpfInlmning2',
+    proofBadges: [
+      'MVVM Architecture',
+      'Relational Data Modeling',
+      'Database-First Approach',
+    ],
   },
+  {
+    title: 'WorkoutLogger',
+    summary:
+      'Workout tracking system built with an API-first approach and MongoDB persistence.',
+    tech: ['Blazor', 'ASP.NET Core API', 'MongoDB'],
+    highlights: [
+      'Structures the application with an API-first startup flow.',
+      'Provides data seeding endpoints for initial exercise setup.',
+      'Manages MongoDB access through a dedicated MongoContext abstraction.',
+    ],
+    githubUrl: 'https://github.com/danirank/WorkoutLogger',
+    proofBadges: [
+      'API-First Design',
+      'NoSQL Persistence',
+      'Seeding Strategy',
+    ],
+  },
+
 
   {
     title: 'BlogPost API',
-    summary: 'ASP.NET Core REST API with JWT auth, DTO mapping, and a structured service layer.',
+    summary:
+      'ASP.NET Core REST API with JWT authentication, DTO mapping, and structured service-layer architecture.',
     tech: [
       '.NET 10',
       'ASP.NET Core Web API',
       'Entity Framework Core',
       'SQL Server',
-      'JWT Bearer Auth',
+      'JWT Bearer Authentication',
       'AutoMapper',
       'Swagger/OpenAPI',
       'Microsoft Identity',
     ],
     highlights: [
-      'CRUD endpoints for BlogPosts and related Comments.',
-      'Protected routes using [Authorize] with JWT Bearer authentication.',
-      'DTO + service layer structure using a ServiceResult pattern.',
+      'Implements CRUD endpoints for BlogPosts and related Comments.',
+      'Secures protected routes using JWT and [Authorize] policies.',
+      'Applies DTO mapping and a ServiceResult pattern for clean separation of concerns.',
     ],
     githubUrl: 'https://github.com/danirank/BlogPostApi',
-    proofBadges: ['Auth & Authorization', 'Service Layer Pattern', 'DTO Mapping', 'OpenAPI Documentation'],
+    proofBadges: [
+      'Authentication & Authorization',
+      'Service Layer Pattern',
+      'DTO Mapping',
+      'OpenAPI Documentation',
+    ],
   },
 
-  {
-    title: 'WorkoutLogger',
-    summary: 'Workout logging app with an API-first setup and MongoDB persistence.',
-    tech: ['Blazor', 'ASP.NET Core API', 'MongoDB'],
-    highlights: [
-      'Designed for API-first startup (API runs before the UI).',
-      'Includes a seeding endpoint to populate exercise data.',
-      'MongoDB connection is configured through a MongoContext abstraction.',
-    ],
-    githubUrl: 'https://github.com/danirank/WorkoutLogger',
-    proofBadges: ['API-First Workflow', 'NoSQL Persistence', 'Seeding & Bootstrapping'],
-  },
-
-  {
-    title: 'RSA Encryption',
-    summary: 'Educational project demonstrating RSA public/private key cryptography concepts.',
-    tech: ['C#', 'Cryptography', 'RSA'],
-    highlights: [
-      'Explains RSA key generation using large prime numbers.',
-      'Demonstrates public key encryption and private key decryption roles.',
-      'Covers signatures and secure communication at a conceptual level.',
-    ],
-    githubUrl: 'https://github.com/danirank/RSAkryptering',
-    proofBadges: ['Security Fundamentals', 'Public-Key Cryptography', 'Conceptual Documentation'],
-  },
+  
+  
 ]
