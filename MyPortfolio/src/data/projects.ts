@@ -52,7 +52,7 @@ export const projects: Project[] = [
     proofBadges: [
       'MVVM Architecture',
       'Relational Data Modeling',
-      'Database-First Approach',
+      'Database First Approach',
     ],
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/danirank/WorkoutLogger',
     proofBadges: [
-      'API-First Design',
+      'API First Design',
       'NoSQL Persistence',
       'Seeding Strategy',
     ],

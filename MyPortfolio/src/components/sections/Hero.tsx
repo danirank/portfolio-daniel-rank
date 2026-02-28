@@ -35,8 +35,8 @@ export function HeroSection() {
               </p>
               <p className="mt-3">
                 With a background in mathematics and experience as a teacher, Ive always been drawn to analytical
-                thinking, clarity, and problem-solving. Those qualities naturally guide how I approach software
-                engineering with structure, intention, and long-term perspective.
+                thinking, clarity, and problem solving. Those qualities naturally guide how I approach software
+                engineering with structure, intention, and long term perspective.
               </p>
               <p className="mt-3">
                 I enjoy designing layered APIs, separating concerns clearly, and building systems that are
