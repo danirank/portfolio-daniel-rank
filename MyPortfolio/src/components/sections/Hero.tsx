@@ -14,7 +14,7 @@ export function HeroSection() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">Portfolio</p>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">{'Daniel R\u00e4nk'}</h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
-            Backend-focused .NET Developer building scalable APIs and cloud-ready systems.
+            Backend-focused .NET Developer building scalable APIs and cloud ready systems.
           </p>
           <p className="mt-1 max-w-xl text-lg text-slate-300">
             Currently studying .NET Cloud Development and looking to contribute as a LIA,
