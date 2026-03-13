@@ -21,10 +21,10 @@ jobs:
           node-version: 20
 
       - run: npm install
-        working-directory: myportfolio
+        working-directory: MyPortfolio
 
       - run: npm run build
-        working-directory: myportfolio
+        working-directory: MyPortfolio
 
       - uses: actions/upload-pages-artifact@v3
         with:
